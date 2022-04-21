@@ -1,0 +1,4 @@
+ui.c:38:6:uiDisplayBasic	16	static
+ui.c:60:13:printDelay	40	static
+ui.c:71:6:uiSliderDelay	72	static
+ui.c:110:6:uiDisplaySpectrum	24	static
