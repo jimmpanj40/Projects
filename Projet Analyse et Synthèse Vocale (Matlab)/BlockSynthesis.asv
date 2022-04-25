@@ -1,0 +1,12 @@
+function[Y]=BlockSynthesis(pitch,sigma2,Aopt,N)
+    den=[1,-Aopt];
+    if pitch==-1
+        sig=blanc(N,sigma2);
+    else
+        floor(1/pitch)
+        sig=sinus_rd(N,pitch);
+    end
+    Y=filter(Aopt,1,sig);
+        
+        
+end 

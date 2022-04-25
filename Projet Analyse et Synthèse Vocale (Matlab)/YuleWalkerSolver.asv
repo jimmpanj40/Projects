@@ -1,0 +1,7 @@
+function [a,e] = YuleWalkerSolver(auto,M) %auto: autocorrélation, M: ordre du filtre, a: coefficient du filtre, v: estimation de l'erreur sur la variance
+    
+    R=toeplitz(auto(1:M)); %matrice symétrique car gamma(p)=conjug(gamma(-p)) et coefficient réel
+    p=conj(auto(2:M+1)');
+    a=R\p;
+    e=auto(1)-p.'*a;
+end

@@ -1,0 +1,16 @@
+
+
+notes:
+ - To show an image I, use imagesc rather than imshow.
+   When using imshow(I), if I is of type float, the value <=0 will be shown black, while the value >=1 will be show white and you can not see many things. 
+   Solutions : 
+        1) normalise I before using imshow 
+        2) imshow(I,[]) -> automatic normalization
+
+ - For the JPEG project, it is not necessary to split your image “physically” into different blocks. If you store the image as a table of blocks, you may need a table of four indices, two for block indices within the image and two for pixel indices within the block. 
+   Advice : try an other way
+
+ - For the JPEG project, to compute the compression rate, at the first time, you can consider only the number of variables being stored after each step.
+   For example, at the beginning, you need to store 500*500 = 250000 values of 1byte. Once the RLC is done, you may need to store only 60000 values of 1byte. 
+	So the rate here is 250000/60000.
+   When Huffman is used, you consider also the size of the dictionary.
