@@ -1,0 +1,5 @@
+audio.c:127:6:audioLoop	32	static
+audio.c:185:6:HAL_SAI_RxCpltCallback	16	static
+audio.c:194:6:HAL_SAI_RxHalfCpltCallback	16	static
+audio.c:223:13:printIndex	40	static
+audio.c:234:13:processAudio	24	static
